@@ -1,0 +1,1 @@
+(function () {addEventListener("load",function(){var e=document.getElementsByTagName("canvas")[0].getContext("webgl");e.clearColor(0,0,0,1),e.clear(e.COLOR_BUFFER_BIT)});})();

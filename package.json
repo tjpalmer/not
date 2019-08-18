@@ -1,0 +1,21 @@
+{
+  "name": "not",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "build": "rm -rf docs && parcel build -d docs --public-url . --experimental-scope-hoisting src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "browsersList": [
+    "> 5%"
+  ]
+}
