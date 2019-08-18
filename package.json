@@ -11,6 +11,8 @@
   },
   "scripts": {
     "build": "rm -rf docs && parcel build -d docs --public-url . --experimental-scope-hoisting src/index.html",
+    "check": "tsc --noEmit --project . --watch",
+    "debug": "rm -rf debug && parcel build -d debug --no-minify --public-url . src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
