@@ -1,3 +1,6 @@
+import fragmentSource from './fragment.glsl';
+import vertexSource from './vertex.glsl';
+
 addEventListener('load', () => {
   let canvas = document.getElementsByTagName('canvas')[0];
   let gl = canvas.getContext('webgl2') as WebGLRenderingContext;
@@ -16,15 +19,3 @@ function loadShader(gl: WebGLRenderingContext, source: string, type: number) {
   console.log(gl.getShaderInfoLog(shader));
   return shader!;
 }
-
-let fragmentSource = `
-void main(void) {
-  gl_FragColor = vec4(1.0, 0.0, 1.0, 1.0);
-}
-`;
-
-let vertexSource = `
-void main(void) {
-  gl_Position = vec4(1.0, 1.0, 1.0, 1.0);
-}
-`;
